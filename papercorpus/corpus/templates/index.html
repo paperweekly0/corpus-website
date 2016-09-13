@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
+<center><h1>Open Corpus In Paper</h1></center>
+<br>
+{% for c in corpus %}
+	<div class="jumbotron">
+  		<h2>{{c.id}}. {{c.title}}</h2>
+  		<p>{{c.description}}</p>
+  		<p><a class="btn btn-primary btn-lg" href="/detail?id={{c.id}}" role="button">Learn more</a></p>
+	</div>
+{% endfor%}
+</html>
